@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoVibe Apparel - Sustainable Fashion</title>
+    <style>
+        /* Resetting some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Section */
+header {
+    background-color: #1e7e34;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+header .logo h1 {
+    font-size: 2rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Home Section */
+.home {
+    background-color: #6abf69;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.home-content h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.home-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.subscribe-btn {
+    background-color: #fff;
+    color: #1e7e34;
+    padding: 12px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.subscribe-btn:hover {
+    background-color: #e6f4e1;
+}
+
+/* About Section */
+.about {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Products Section */
+.products {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.products h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.product-card {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-card h3 {
+    margin-top: 15px;
+    font-size: 1.6rem;
+}
+
+.product-card p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.buy-btn {
+    background-color: #1e7e34;
+    color: white;
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buy-btn:hover {
+    background-color: #155d27;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact form input, .contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact form button {
+    background-color: #1e7e34;
+    color: white;
+    padding: 12px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact form button:hover {
+    background-color: #155d27;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1e7e34;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>EcoVibe Apparel</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+        <div class="home-content">
+            <h2>Sustainable Fashion for a Better Tomorrow</h2>
+            <p>EcoVibe Apparel brings you trendy, high-quality clothing made from eco-friendly materials.</p>
+            <button id="subscribeButton" class="subscribe-btn">Subscribe</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>EcoVibe Apparel is dedicated to providing eco-conscious fashion for the modern world. Our sustainable clothing line is crafted with love for the environment, offering trendy designs without compromising on quality or style.</p>
+    </section>
+
+    <!-- Product Section -->
+    <section id="products" class="products">
+        <h2>Our Products</h2>
+        <div class="product-card">
+            <img src="shirt.jpg" alt="Eco Shirt">
+            <h3>Organic Cotton Shirt</h3>
+            <p>$29.99</p>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product-card">
+            <img src="dress.jpg" alt="Eco Dress">
+            <h3>Recycled Fabric Dress</h3>
+            <p>$49.99</p>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product-card">
+            <img src="activewear.jpg" alt="Eco Activewear">
+            <h3>Eco-Friendly Activewear</h3>
+            <p>$39.99</p>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 EcoVibe Apparel. All Rights Reserved.</p>
+    </footer>
+
+    <script >
+        // 1. Subscribe Button functionality
+const subscribeButton = document.getElementById('subscribeButton');
+subscribeButton.addEventListener('click', function() {
+    subscribeButton.textContent = 'Subscribed';
+    subscribeButton.disabled = true;
+});
+
+// 2. Buy Now Button functionality (simulating adding products to the cart)
+const buyButtons = document.querySelectorAll('.buy-btn');
+buyButtons.forEach((button, index) => {
+    button.addEventListener('click', function() {
+        // A simple way to simulate adding the product to a cart
+        alert(`Product ${index + 1} added to cart!`);
+    });
+});
+
+// 3. Form Validation for the Contact Form
+const contactForm = document.getElementById('contactForm');
+contactForm.addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the form from submitting immediately
+
+    // Get input values
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    // Basic validation
+    if (name === '' || email === '' || message === '') {
+        alert("Please fill in all fields.");
+    } else if (!validateEmail(email)) {
+        alert("Please enter a valid email address.");
+    } else {
+        alert("Message sent successfully! Thank you for reaching out.");
+        // Reset form
+        contactForm.reset();
+    }
+});
+
+// Helper function to validate email format
+function validateEmail(email) {
+    const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+    return emailPattern.test(email);
+}
+
+// 4. Scroll-to-Top Button functionality
+const scrollToTopButton = document.createElement('button');
+scrollToTopButton.textContent = '↑ Scroll to Top';
+scrollToTopButton.classList.add('scroll-to-top-btn');
+document.body.appendChild(scrollToTopButton);
+
+scrollToTopButton.addEventListener('click', function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+// Show/hide scroll-to-top button based on scroll position
+window.addEventListener('scroll', function() {
+    if (window.scrollY > 300) {
+        scrollToTopButton.style.display = 'block';
+    } else {
+        scrollToTopButton.style.display = 'none';
+    }
+});
+
+// 5. Modal for Product Details
+const productCards = document.querySelectorAll('.product-card');
+
+productCards.forEach((card) => {
+    card.addEventListener('click', function() {
+        showModal(card);
+    });
+});
+
+// Create a simple modal to display product details
+function showModal(card) {
+    const modal = document.createElement('div');
+    modal.classList.add('modal');
+    const modalContent = `
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>${card.querySelector('h3').textContent}</h2>
+            <img src="${card.querySelector('img').src}" alt="Product Image">
+            <p>Price: ${card.querySelector('p').textContent}</p>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+    `;
+    modal.innerHTML = modalContent;
+    document.body.appendChild(modal);
+
+    // Close modal when clicking the close button
+    const closeModal = modal.querySelector('.close-modal');
+    closeModal.addEventListener('click', function() {
+        document.body.removeChild(modal);
+    });
+
+    // Close modal when clicking outside the modal
+    modal.addEventListener('click', function(event) {
+        if (event.target === modal) {
+            document.body.removeChild(modal);
+        }
+    });
+}
+
+// 6. Interactive hover effect for product images
+const productImages = document.querySelectorAll('.product-card img');
+productImages.forEach((image) => {
+    image.addEventListener('mouseenter', function() {
+        image.style.transform = 'scale(1.1)';
+        image.style.transition = 'transform 0.3s ease-in-out';
+    });
+
+    image.addEventListener('mouseleave', function() {
+        image.style.transform = 'scale(1)';
+    });
+});
+
+    </script>
+</body>
+</html>
